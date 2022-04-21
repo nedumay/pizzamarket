@@ -8,4 +8,6 @@
     <string name="login_guest">Login guest</string>
     <string name="remember_me">Remember me</string>
     <string name="forgot_password">Forgot password?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="police">By signing up, you agree to programs terms of service and privacy policy.</string>
 </resources>

@@ -9,4 +9,6 @@
     <string name="login_guest">Войти как гость</string>
     <string name="remember_me">Запомнить меня</string>
     <string name="forgot_password">Забыл пароль?</string>
+    <string name="sign_up">Зарегестрироваться</string>
+    <string name="police">Регистрируясь, вы соглашаетесь с условиями использования программы и политики конфиденциальности.</string>
 </resources>
