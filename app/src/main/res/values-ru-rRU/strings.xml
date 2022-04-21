@@ -11,4 +11,9 @@
     <string name="forgot_password">Забыл пароль?</string>
     <string name="sign_up">Зарегестрироваться</string>
     <string name="police">Регистрируясь, вы соглашаетесь с условиями использования программы и политики конфиденциальности.</string>
+    <string name="loading">Загрузка</string>
+    <string name="check">Проверка существования аккаунта</string>
+    <string name="logged">Вы зарегистрированы</string>
+    <string name="no_logged">Аккаунт уже существует</string>
+    <string name="no_log">Аккаунт не существует</string>
 </resources>
