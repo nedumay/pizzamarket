@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "226872848216",
+    "firebase_url": "https://cookbook-9e887-default-rtdb.firebaseio.com",
+    "project_id": "cookbook-9e887",
+    "storage_bucket": "cookbook-9e887.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226872848216:android:f49e69be20b273d022ff2d",
+        "android_client_info": {
+          "package_name": "com.example.cookbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226872848216-8p6tjjlbtc5tbb96pelcfk5emqviu868.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVsX-t6Q6-W8WmlbqdQwcC26wGENqnVAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226872848216-8p6tjjlbtc5tbb96pelcfk5emqviu868.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226872848216:android:d7a4cd58b999ca3f22ff2d",
+        "android_client_info": {
+          "package_name": "com.example.pizzamarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226872848216-8p6tjjlbtc5tbb96pelcfk5emqviu868.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVsX-t6Q6-W8WmlbqdQwcC26wGENqnVAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226872848216-8p6tjjlbtc5tbb96pelcfk5emqviu868.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
