@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">PizzaMarket</string>
+    <string name="app_name">Pizza Market</string>
+    <string name="login_btn">Login</string>
+    <string name="registr_btn">Registration</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="next">Next</string>
+    <string name="login_guest">Login guest</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password?</string>
 </resources>

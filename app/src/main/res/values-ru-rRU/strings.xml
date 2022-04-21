@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pizza Market</string>
+    <string name="login_btn">Вход</string>
+    <string name="registr_btn">Регистрация</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="next">Далее</string>
+    <string name="login_guest">Войти как гость</string>
+    <string name="remember_me">Запомнить меня</string>
+    <string name="forgot_password">Забыл пароль?</string>
+</resources>
