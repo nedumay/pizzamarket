@@ -9,11 +9,12 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardPhoto"
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_width="0dp"
+        android:layout_height="420dp"
+        app:cardCornerRadius="0dp"
         app:cardElevation="0dp"
-        app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeWidth="0dp">
@@ -44,14 +45,15 @@
             android:layout_height="match_parent"
             android:background="@color/white"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/roboto_bold"
+                android:fontFamily="casual"
                 android:text="@string/app_name"
                 android:textColor="@color/black"
-                android:textSize="35sp" />
+                android:textSize="40sp" />
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
@@ -65,10 +67,10 @@
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardPhoto"
-        app:layout_constraintVertical_bias="0.036">
+        app:layout_constraintVertical_bias="0.050000012">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_login"
@@ -89,12 +91,13 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_login"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.003">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
@@ -108,43 +111,44 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linChek"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/guest_btn"
+        android:id="@+id/registr_btn"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="match_parent"
         android:layout_height="60sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         android:text="@string/registr_btn"
         android:textColor="@color/red"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_btn"
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linChek"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginTop="4dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/text_password"
-        tools:layout_editor_absoluteX="1dp">
+        app:layout_constraintEnd_toEndOf="@+id/login_btn"
+        app:layout_constraintStart_toStartOf="@+id/login_btn"
+        app:layout_constraintTop_toBottomOf="@+id/text_password">
 
         <CheckBox
             android:id="@+id/chekLogin"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/remember_me"
             android:onClick="saveLogin"
+            android:text="@string/remember_me"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -154,6 +158,7 @@
             android:layout_height="wrap_content"
             android:text="@string/forgot_password"
             android:textSize="17sp"
+            android:onClick="forgotPassword"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

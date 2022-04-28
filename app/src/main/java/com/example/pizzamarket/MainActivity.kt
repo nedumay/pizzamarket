@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             bindingStart.chekLogin.isChecked = true
         }
 
-        bindingStart.guestBtn.setOnClickListener {
+        bindingStart.registrBtn.setOnClickListener {
             val regIntent = Intent(this@MainActivity, Registration::class.java)
             startActivity(regIntent)
         }
@@ -62,5 +62,9 @@ class MainActivity : AppCompatActivity() {
                 loginPrefsEditor.commit()
             }
         }
+    }
+
+    fun forgotPassword(view: View){
+
     }
 }

@@ -4,6 +4,7 @@ import android.app.ProgressDialog
 import android.content.Intent
 import android.widget.Toast
 import com.example.pizzamarket.MainActivity
+import com.example.pizzamarket.MenuActivity
 import com.example.pizzamarket.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.*
@@ -41,12 +42,12 @@ class LoginUserEmail {
     }
 
     private fun checkLoggedInState( loginActivity: MainActivity){
-        //val logIntent = Intent(loginActivity, MainActivityMenu::class.java)
+        val logIntent = Intent(loginActivity, MenuActivity::class.java)
         if(auth.currentUser == null){
             Toast.makeText(loginActivity, R.string.no_log, Toast.LENGTH_SHORT).show()
         } else {
             Toast.makeText(loginActivity, R.string.logged, Toast.LENGTH_SHORT).show()
-            //loginActivity.startActivity(logIntent)
+            loginActivity.startActivity(logIntent)
         }
     }
 }
