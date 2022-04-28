@@ -1,7 +1,10 @@
 package com.example.pizzamarket
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -12,12 +15,14 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pizzamarket.databinding.ActivityMenuBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class MenuActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMenuBinding
 
+    @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -26,22 +31,36 @@ class MenuActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.appBarMenu.toolbar)
 
-        binding.appBarMenu.fab.setOnClickListener { view ->
+        binding.appBarMenu.appbarlayout.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_menu)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.nav_home_menu, R.id.nav_basket, R.id.nav_settings_account
-            ), drawerLayout
+            setOf(R.id.nav_home_menu, R.id.nav_basket, R.id.nav_settings_account), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        binding.appBarMenu.toolbar.setOnMenuItemClickListener { menuItem ->
+            when(menuItem.itemId){
+                R.id.support ->{
+                    Toast.makeText(applicationContext, R.string.action_support, Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.action_settings -> {
+                    Toast.makeText(applicationContext,R.id.action_settings, Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.log_out ->{
+                    logout()
+                    true
+                }
+                else -> false
+            }
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -53,5 +72,12 @@ class MenuActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_menu)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    fun logout(){
+        FirebaseAuth.getInstance().signOut()
+        val intent = Intent(this@MenuActivity, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }

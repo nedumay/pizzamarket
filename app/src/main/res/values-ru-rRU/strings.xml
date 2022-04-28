@@ -16,16 +16,33 @@
     <string name="logged">Вы зарегистрированы</string>
     <string name="no_logged">Аккаунт уже существует</string>
     <string name="no_log">Аккаунт не существует</string>
+    <string name="log_out">Выйти</string>
+    <string name="popular_choice">Популярный выбор</string>
+    <string name="weekly_discount">Еженедельные скидки</string>
 
     <string name="title_activity_menu">MenuActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_title">Аккаунт</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+
+    <string name="action_settings">Настройки</string>
+    <string name="action_support">Помощь</string>
 
     <string name="menu_home">Меню</string>
     <string name="menu_gallery">Корзина</string>
     <string name="menu_slideshow">Настройки аккаунта</string>
+
+    <string name="pizza_cesar">Пицца Цезарь"</string>
+    <string name="pizza_cheese">Пицца Сырная"</string>
+    <string name="pizza_classic">Пицца Класическая"</string>
+    <string name="pizza_four_cheese">Пицца 4 Сыра"</string>
+    <string name="pizza_margharita">Пицца Маргарита"</string>
+    <string name="pizza_meat">Пицца Мясная"</string>
+    <string name="pizza_neopl">Пицца Неаполитанская"</string>
+    <string name="pizza_penaple">Пицца c ананасами"</string>
+    <string name="pizza_pepperony">Пицца Пепперони"</string>
+    <string name="pizza_sea">Пицца с морепродуктами"</string>
+    <string name="pizza_assorted">Пицца Ассорти"</string>
 </resources>

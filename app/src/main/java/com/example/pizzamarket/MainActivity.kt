@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import com.example.pizzamarket.databinding.ActivityMainBinding
 import com.example.pizzamarket.domain.LoginUserEmail
+import com.example.pizzamarket.domain.User
 import com.example.pizzamarket.ui.Registration
 
 class MainActivity : AppCompatActivity() {
@@ -34,12 +35,17 @@ class MainActivity : AppCompatActivity() {
             email = bindingStart.inputLogin.text.toString()
             password = bindingStart.inputPassword.text.toString()
             loginUserEmail.loginUser(email, password, this@MainActivity)
+            val user = User()
+            user.name(email = email)
+            user.password(password = password)
+
         }
         if(saveLogin){
             bindingStart.inputLogin.setText(loginPreferences.getString("username"," "))
             bindingStart.inputPassword.setText(loginPreferences.getString("password"," "))
             bindingStart.chekLogin.isChecked = true
         }
+
 
         bindingStart.registrBtn.setOnClickListener {
             val regIntent = Intent(this@MainActivity, Registration::class.java)

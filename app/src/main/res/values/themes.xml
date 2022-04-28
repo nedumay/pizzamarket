@@ -54,6 +54,5 @@
     </style>
 
     <style name="Theme.PizzaMarket.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
     <style name="Theme.PizzaMarket.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
