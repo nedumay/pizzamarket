@@ -4,17 +4,21 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Filter
+import android.widget.Filterable
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pizzamarket.R
 import com.example.pizzamarket.data.DataItem
+import java.util.*
+import kotlin.collections.ArrayList
 
 class RecyclerAdapter  internal constructor(context: Context?, dataItem: List<DataItem>, private val onClickListener:onRecyclerClickListener):
     RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
 
     private val inflater: LayoutInflater
-    private val dataItem: List<DataItem>
+    private var dataItem: List<DataItem>
 
     init {
         this.dataItem = dataItem
@@ -51,4 +55,5 @@ class RecyclerAdapter  internal constructor(context: Context?, dataItem: List<Da
     override fun getItemCount(): Int {
         return dataItem.size
     }
+
 }

@@ -15,7 +15,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024"
         tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search"
+            android:padding="10dp"
+            app:startIconDrawable="@drawable/ic_baseline_search">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/research"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/category"
@@ -23,14 +40,16 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_margin="10dp"
-            android:text="@string/popular_choice"
+            android:fontFamily="sans-serif"
             android:gravity="center"
+            android:text="@string/popular_choice"
             tools:ignore="InvalidId" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/red"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintHorizontal_bias="1.0"
@@ -43,14 +62,16 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_margin="10dp"
-            android:text="@string/weekly_discount"
+            android:fontFamily="sans-serif"
             android:gravity="center"
+            android:text="@string/weekly_discount"
             tools:ignore="InvalidId" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/red"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/list_item" />

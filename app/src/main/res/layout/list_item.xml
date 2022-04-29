@@ -13,13 +13,14 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         app:strokeWidth="0dp"
-        app:cardElevation="0dp"
+        app:cardElevation="5dp"
         app:strokeColor="@color/stroke_color"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/gray"
             android:orientation="vertical">
 
             <!-- Media -->
@@ -27,22 +28,21 @@
                 android:id="@+id/card_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:strokeWidth="2dp"
-                app:cardElevation="5dp"
                 app:strokeColor="@color/stroke_color"
                 tools:ignore="MissingConstraints">
                 <ImageView
                     android:id="@+id/img_view"
-                    android:layout_width="300dp"
-                    android:layout_height="200dp"
+                    android:layout_width="200dp"
+                    android:layout_height="140dp"
                     android:scaleType="centerCrop"
                     />
 
             </com.google.android.material.card.MaterialCardView>
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:background="@color/gray"
                 android:padding="5dp">
 
                 <!-- Title, secondary and supporting text -->
@@ -51,24 +51,35 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/app_name"
-                    android:textSize="18sp"
-                    />
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <TextView
                     android:id="@+id/text_star"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="130dp"
                     android:text="4/5"
-                    android:textSize="18sp"
-                    />
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/star"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <ImageView
                     android:id="@+id/star"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:src="@drawable/ic_baseline_star"/>
 
-            </LinearLayout>
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/ic_baseline_star"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_star"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/text_star" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
 

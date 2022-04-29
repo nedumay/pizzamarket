@@ -18,6 +18,7 @@
     <string name="log_out">Logout</string>
     <string name="popular_choice">Popular choice</string>
     <string name="weekly_discount">Weekly discount</string>
+    <string name="search">Search</string>
 
     <string name="title_activity_menu">MenuActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

@@ -19,6 +19,7 @@
     <string name="log_out">Выйти</string>
     <string name="popular_choice">Популярный выбор</string>
     <string name="weekly_discount">Еженедельные скидки</string>
+    <string name="search">Поиск</string>
 
     <string name="title_activity_menu">MenuActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
