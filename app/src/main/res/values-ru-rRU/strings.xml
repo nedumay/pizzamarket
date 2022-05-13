@@ -46,4 +46,21 @@
     <string name="pizza_pepperony">Пицца Пепперони"</string>
     <string name="pizza_sea">Пицца с морепродуктами"</string>
     <string name="pizza_assorted">Пицца Ассорти"</string>
+
+    <!-- Меню добавки -->
+    <string name="no">Нет</string>
+    <string name="cheese">Сыр</string>
+    <string name="sauce">Соус</string>
+    <!-- Меню доставка-->
+    <string name="courier">Курьер</string>
+    <string name="pickup">Самовывоз</string>
+
+    <string name="size_pizza">Диаметр пиццы</string>
+    <string name="dditives">Добавка</string>
+    <string name="delivery_method">Способ достаки</string>
+    <string name="price">Цена</string>
+    <string name="information">Информация</string>
+    <string name="size_32">32</string>
+    <string name="size_48">48</string>
+    <string name="size_55">55</string>
 </resources>

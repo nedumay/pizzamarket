@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PizzaMarket">
         <activity
+            android:name=".PizzaInfo"
+            android:exported="false" />
+        <activity
             android:name=".MenuActivity"
             android:exported="false"
             android:label="@string/title_activity_menu"
