@@ -5,25 +5,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".PizzaInfo">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardElevation="5dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="30dp"
+        app:strokeWidth="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19"
+        app:layout_constraintVertical_bias="0.23000002"
         app:strokeColor="@color/stroke_color"
         tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/img_view"
-            android:layout_width="300dp"
-            android:layout_height="200dp"
+            android:layout_width="380dp"
+            android:layout_height="250dp"
             android:scaleType="centerCrop" />
     </com.google.android.material.card.MaterialCardView>
 
@@ -39,6 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/card_image" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,11 +53,11 @@
 
         <TextView
             android:id="@+id/name_pizza"
+            style="@style/TextMenuPizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name pizza"
-            style="@style/TextMenuPizza"
             android:layout_margin="5dp"
+            android:text="Name pizza"
             app:layout_constraintEnd_toStartOf="@+id/star"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -71,31 +75,31 @@
 
         <TextView
             android:id="@+id/text_star_pizza"
+            style="@style/TextMenuPizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4/5"
-            style="@style/TextMenuPizza"
             android:layout_margin="5dp"
+            android:text="4/5"
             app:layout_constraintBottom_toBottomOf="@+id/name_pizza"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/size_pizza"
+            style="@style/TextMenuPizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/size_pizza"
-            style="@style/TextMenuPizza"
             android:layout_margin="5dp"
+            android:text="@string/size_pizza"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/name_pizza" />
 
         <TextView
             android:id="@+id/menu_size"
+            style="@style/TextMenuPizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/size_32"
-            style="@style/TextMenuPizza"
             app:layout_constraintBottom_toBottomOf="@+id/size_pizza"
             app:layout_constraintEnd_toEndOf="@+id/text_star_pizza"
             app:layout_constraintStart_toStartOf="@+id/text_star_pizza"
@@ -103,20 +107,20 @@
 
         <TextView
             android:id="@+id/additives_pizza"
+            style="@style/TextMenuPizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/dditives"
-            style="@style/TextMenuPizza"
             android:layout_margin="5dp"
+            android:text="@string/dditives"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/size_pizza" />
 
         <TextView
             android:id="@+id/menu_additive"
+            style="@style/TextMenuPizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/no"
-            style="@style/TextMenuPizza"
             app:layout_constraintBottom_toBottomOf="@+id/additives_pizza"
             app:layout_constraintEnd_toEndOf="@+id/menu_size"
             app:layout_constraintStart_toStartOf="@+id/menu_size"
@@ -124,46 +128,59 @@
 
         <TextView
             android:id="@+id/delivery_pizza"
+            style="@style/TextMenuPizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/delivery_method"
-            style="@style/TextMenuPizza"
             android:layout_margin="5dp"
+            android:text="@string/delivery_method"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/additives_pizza" />
 
         <TextView
             android:id="@+id/menu_delivery"
+            style="@style/TextMenuPizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/courier"
-            style="@style/TextMenuPizza"
             app:layout_constraintBottom_toBottomOf="@+id/delivery_pizza"
             app:layout_constraintEnd_toEndOf="@+id/menu_additive"
             app:layout_constraintTop_toTopOf="@+id/delivery_pizza" />
 
         <TextView
             android:id="@+id/price_pizza"
+            style="@style/TextMenuPizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/price"
-            style="@style/TextMenuPizza"
             android:layout_margin="5dp"
+            android:text="@string/price"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/delivery_pizza" />
 
         <TextView
             android:id="@+id/price"
+            style="@style/TextMenuPizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="price"
-            style="@style/TextMenuPizza"
             app:layout_constraintBottom_toBottomOf="@+id/price_pizza"
             app:layout_constraintEnd_toEndOf="@+id/menu_delivery"
             app:layout_constraintTop_toTopOf="@+id/price_pizza" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/add_to_basket"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.152" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

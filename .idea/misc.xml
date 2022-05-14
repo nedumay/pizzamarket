@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Samim/AndroidStudioProjects/PizzaMarket2/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Samim/AndroidStudioProjects/PizzaMarket2/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/Samim/AndroidStudioProjects/PizzaMarket2/app/src/main/res/layout/activity_menu.xml" value="0.2975630611372381" />
         <entry key="..\:/Users/Samim/AndroidStudioProjects/PizzaMarket2/app/src/main/res/layout/activity_pizza_info.xml" value="0.33" />
         <entry key="..\:/Users/Samim/AndroidStudioProjects/PizzaMarket2/app/src/main/res/layout/activity_registration.xml" value="0.3625" />
@@ -12,7 +12,7 @@
         <entry key="..\:/Users/Samim/AndroidStudioProjects/PizzaMarket2/app/src/main/res/layout/fragment_cesar.xml" value="0.2975630611372381" />
         <entry key="..\:/Users/Samim/AndroidStudioProjects/PizzaMarket2/app/src/main/res/layout/fragment_menu.xml" value="0.33" />
         <entry key="..\:/Users/Samim/AndroidStudioProjects/PizzaMarket2/app/src/main/res/layout/fragment_settings_account.xml" value="0.2975630611372381" />
-        <entry key="..\:/Users/Samim/AndroidStudioProjects/PizzaMarket2/app/src/main/res/layout/list_item.xml" value="0.33" />
+        <entry key="..\:/Users/Samim/AndroidStudioProjects/PizzaMarket2/app/src/main/res/layout/list_item.xml" value="0.5" />
         <entry key="..\:/Users/Samim/AndroidStudioProjects/PizzaMarket2/app/src/main/res/layout/nav_header_menu.xml" value="0.25" />
         <entry key="..\:/Users/Samim/AndroidStudioProjects/PizzaMarket2/app/src/main/res/menu/activity_main_drawer.xml" value="0.2975630611372381" />
         <entry key="..\:/Users/Samim/AndroidStudioProjects/PizzaMarket2/app/src/main/res/menu/additives_menu.xml" value="0.2967079948696024" />
