@@ -47,6 +47,7 @@ class MenuFragment : Fragment() {
                         cesarIntent.putExtra("image",R.drawable.cesar)
                         cesarIntent.putExtra("name", R.string.pizza_cesar)
                         cesarIntent.putExtra("star", "4/5")
+                        cesarIntent.putExtra("price", "2.5$")
                         startActivity(cesarIntent)
                     }
                     1 ->{
@@ -54,6 +55,7 @@ class MenuFragment : Fragment() {
                         cheeseIntent.putExtra("image",R.drawable.cheezz)
                         cheeseIntent.putExtra("name", R.string.pizza_cheese)
                         cheeseIntent.putExtra("star", "3.6/5")
+                        cheeseIntent.putExtra("price", "1.5$")
                         startActivity(cheeseIntent)
                     }
                     2->{
@@ -61,6 +63,7 @@ class MenuFragment : Fragment() {
                         classicIntent.putExtra("image",R.drawable.classic)
                         classicIntent.putExtra("name", R.string.pizza_classic)
                         classicIntent.putExtra("star", "4.5/5")
+                        classicIntent.putExtra("price", "1.36$")
                         startActivity(classicIntent)
                     }
                     3->{
@@ -68,6 +71,7 @@ class MenuFragment : Fragment() {
                         fourcheeseIntent.putExtra("image",R.drawable.fourcheez)
                         fourcheeseIntent.putExtra("name", R.string.pizza_four_cheese)
                         fourcheeseIntent.putExtra("star", "3.5/5")
+                        fourcheeseIntent.putExtra("price", "2$")
                         startActivity(fourcheeseIntent)
                     }
                     4->{
@@ -75,6 +79,7 @@ class MenuFragment : Fragment() {
                         marghIntent.putExtra("image",R.drawable.margarita)
                         marghIntent.putExtra("name", R.string.pizza_margharita)
                         marghIntent.putExtra("star", "3.9/5")
+                        marghIntent.putExtra("price", "3.16$")
                         startActivity(marghIntent)
                     }
                     5->{
@@ -82,6 +87,7 @@ class MenuFragment : Fragment() {
                         meatIntent.putExtra("image",R.drawable.meat)
                         meatIntent.putExtra("name", R.string.pizza_meat)
                         meatIntent.putExtra("star", "4.9/5")
+                        meatIntent.putExtra("price", "1.23$")
                         startActivity(meatIntent)
                     }
                     6->{
@@ -89,6 +95,7 @@ class MenuFragment : Fragment() {
                         neoplIntent.putExtra("image",R.drawable.neapolitan)
                         neoplIntent.putExtra("name", R.string.pizza_neopl)
                         neoplIntent.putExtra("star", "3.2/5")
+                        neoplIntent.putExtra("price", "2$")
                         startActivity(neoplIntent)
                     }
                     7->{
@@ -96,6 +103,7 @@ class MenuFragment : Fragment() {
                         penapleIntent.putExtra("image",R.drawable.penapple)
                         penapleIntent.putExtra("name", R.string.pizza_penaple)
                         penapleIntent.putExtra("star", "5/5")
+                        penapleIntent.putExtra("price", "1.1$")
                         startActivity(penapleIntent)
                     }
                     8->{
@@ -103,6 +111,7 @@ class MenuFragment : Fragment() {
                         peperIntent.putExtra("image",R.drawable.pepperony)
                         peperIntent.putExtra("name", R.string.pizza_pepperony)
                         peperIntent.putExtra("star", "4.2/5")
+                        peperIntent.putExtra("price", "1.5$")
                         startActivity(peperIntent)
                     }
                     9->{
@@ -110,6 +119,7 @@ class MenuFragment : Fragment() {
                         seaIntent.putExtra("image",R.drawable.sea)
                         seaIntent.putExtra("name", R.string.pizza_sea)
                         seaIntent.putExtra("star", "3.2/5")
+                        seaIntent.putExtra("price", "3$")
                         startActivity(seaIntent)
                     }
                     10->{
@@ -117,6 +127,7 @@ class MenuFragment : Fragment() {
                         assortedIntent.putExtra("image",R.drawable.season)
                         assortedIntent.putExtra("name", R.string.pizza_assorted)
                         assortedIntent.putExtra("star", "4.5/5")
+                        assortedIntent.putExtra("price", "2.33$")
                         startActivity(assortedIntent)
                     }
                 }
@@ -133,6 +144,7 @@ class MenuFragment : Fragment() {
                         neoplIntent.putExtra("image",R.drawable.neapolitan)
                         neoplIntent.putExtra("name", R.string.pizza_neopl)
                         neoplIntent.putExtra("star", "3.2/5")
+                        neoplIntent.putExtra("price", "2$")
                         startActivity(neoplIntent)
                     }
                     1->{
@@ -140,6 +152,7 @@ class MenuFragment : Fragment() {
                         penapleIntent.putExtra("image",R.drawable.penapple)
                         penapleIntent.putExtra("name", R.string.pizza_penaple)
                         penapleIntent.putExtra("star", "5/5")
+                        penapleIntent.putExtra("price", "1.1$")
                         startActivity(penapleIntent)
                     }
                     2->{
@@ -147,6 +160,7 @@ class MenuFragment : Fragment() {
                         peperIntent.putExtra("image",R.drawable.pepperony)
                         peperIntent.putExtra("name", R.string.pizza_pepperony)
                         peperIntent.putExtra("star", "4.2/5")
+                        peperIntent.putExtra("price", "1.5$")
                         startActivity(peperIntent)
                     }
                     3->{
@@ -154,6 +168,7 @@ class MenuFragment : Fragment() {
                         seaIntent.putExtra("image",R.drawable.sea)
                         seaIntent.putExtra("name", R.string.pizza_sea)
                         seaIntent.putExtra("star", "3.2/5")
+                        seaIntent.putExtra("price", "3$")
                         startActivity(seaIntent)
                     }
                     4->{
@@ -161,6 +176,7 @@ class MenuFragment : Fragment() {
                         assortedIntent.putExtra("image",R.drawable.season)
                         assortedIntent.putExtra("name", R.string.pizza_assorted)
                         assortedIntent.putExtra("star", "4.5/5")
+                        assortedIntent.putExtra("price", "2.33$")
                         startActivity(assortedIntent)
                     }
                 }

@@ -17,6 +17,7 @@ class PizzaInfo : AppCompatActivity() {
     lateinit var imgView: ImageView
     lateinit var namePizza: TextView
     lateinit var starText: TextView
+    lateinit var priceText: TextView
 
     //size
     val size_32 = 1
@@ -40,14 +41,17 @@ class PizzaInfo : AppCompatActivity() {
         imgView = findViewById(R.id.img_view)
         namePizza = findViewById(R.id.name_pizza)
         starText = findViewById(R.id.text_star_pizza)
+        priceText = findViewById(R.id.price)
 
         //Получение данных из прошлой активити
         val img = intent.extras?.getInt("image")
         val name = intent.extras?.getInt("name")
         val star = intent.extras?.getString("star")
+        val price = intent.extras?.getString("price")
         imgView.setImageResource(img!!)
         namePizza.setText(name!!)
         starText.setText(star)
+        priceText.setText(price)
         //Контекстное меню
         registerForContextMenu(size)
         registerForContextMenu(addit)
