@@ -1,6 +1,6 @@
-package com.example.pizzamarket.domain
+package com.example.pizzamarket.data.storage
 
-class User{
+class User {
     var email = ""
     var password = ""
 

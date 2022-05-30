@@ -17,8 +17,9 @@
         <activity
             android:name=".MenuActivity"
             android:exported="false"
-            android:label="@string/title_activity_menu"
-            android:theme="@style/Theme.PizzaMarket.NoActionBar" />
+            android:label="@string/title_activity_menu" />
+            <!--android:theme="@style/Theme.PizzaMarket.NoActionBar"-->
+
         <activity
             android:name=".ui.Registration"
             android:exported="false" />

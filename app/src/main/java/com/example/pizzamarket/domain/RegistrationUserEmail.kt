@@ -37,7 +37,6 @@ class RegistrationUserEmail {
                 }
             }
         }
-
     }
 
     private fun checkLoggedInState(registrationActivity: Registration) {
