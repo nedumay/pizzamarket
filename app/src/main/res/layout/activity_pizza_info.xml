@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
-    tools:context=".PizzaInfo">
+    tools:context=".ui.info.PizzaInfo">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card_image"

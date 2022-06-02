@@ -1,4 +1,4 @@
-package com.example.pizzamarket
+package com.example.pizzamarket.ui.menu
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -14,7 +14,9 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.example.pizzamarket.R
 import com.example.pizzamarket.databinding.ActivityMenuBinding
+import com.example.pizzamarket.ui.main.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class MenuActivity : AppCompatActivity() {
@@ -51,7 +53,7 @@ class MenuActivity : AppCompatActivity() {
                     true
                 }
                 R.id.action_settings -> {
-                    Toast.makeText(applicationContext,R.id.action_settings, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(applicationContext, R.id.action_settings, Toast.LENGTH_SHORT).show()
                     true
                 }
                 R.id.log_out ->{

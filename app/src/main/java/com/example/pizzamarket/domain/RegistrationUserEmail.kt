@@ -3,9 +3,9 @@ package com.example.pizzamarket.domain
 import android.app.ProgressDialog
 import android.content.Intent
 import android.widget.Toast
-import com.example.pizzamarket.MainActivity
+import com.example.pizzamarket.ui.main.MainActivity
 import com.example.pizzamarket.R
-import com.example.pizzamarket.ui.Registration
+import com.example.pizzamarket.ui.registration.Registration
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.*
 import kotlinx.coroutines.tasks.await
@@ -14,7 +14,7 @@ class RegistrationUserEmail {
     private var auth: FirebaseAuth = FirebaseAuth.getInstance()
     private lateinit var progDialog: ProgressDialog
 
-    internal fun registrUser(email: String, password: String, registrationActivity: Registration ){
+    internal fun registrUser(email: String, password: String, registrationActivity: Registration){
         progDialog = ProgressDialog(registrationActivity)
         progDialog.setTitle(R.string.loading)
         progDialog.setMessage(registrationActivity.resources.getString(R.string.check))

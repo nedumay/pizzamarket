@@ -1,8 +1,7 @@
-package com.example.pizzamarket.ui
+package com.example.pizzamarket.ui.registration
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.pizzamarket.R
 import com.example.pizzamarket.databinding.ActivityRegistrationBinding
 import com.example.pizzamarket.domain.RegistrationUserEmail
 

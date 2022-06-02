@@ -1,13 +1,11 @@
-package com.example.pizzamarket
+package com.example.pizzamarket.ui.info
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.*
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.content.ContentProviderCompat.requireContext
+import com.example.pizzamarket.R
 
 class PizzaInfo : AppCompatActivity() {
 

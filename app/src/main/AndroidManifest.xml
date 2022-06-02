@@ -12,19 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PizzaMarket">
         <activity
-            android:name=".PizzaInfo"
+            android:name=".ui.info.PizzaInfo"
             android:exported="false" />
         <activity
-            android:name=".MenuActivity"
+            android:name=".ui.menu.MenuActivity"
             android:exported="false"
-            android:label="@string/title_activity_menu" />
-            <!--android:theme="@style/Theme.PizzaMarket.NoActionBar"-->
-
+            android:label="@string/title_activity_menu"
+            android:theme="@style/Theme.PizzaMarket.NoActionBar"/>
         <activity
-            android:name=".ui.Registration"
+            android:name=".ui.registration.Registration"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

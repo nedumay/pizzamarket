@@ -3,8 +3,8 @@ package com.example.pizzamarket.domain
 import android.app.ProgressDialog
 import android.content.Intent
 import android.widget.Toast
-import com.example.pizzamarket.MainActivity
-import com.example.pizzamarket.MenuActivity
+import com.example.pizzamarket.ui.main.MainActivity
+import com.example.pizzamarket.ui.menu.MenuActivity
 import com.example.pizzamarket.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.*
