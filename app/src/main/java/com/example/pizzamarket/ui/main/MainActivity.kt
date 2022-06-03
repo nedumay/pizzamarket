@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
+import android.widget.Toast
 import com.example.data.repository.UserRepositoryImpl
 import com.example.data.storage.SharedPrefUserStorage
 import com.example.domain.models.SaveUserEmailParam
@@ -16,6 +17,7 @@ import com.example.domain.usecase.SaveEmail
 import com.example.pizzamarket.R
 import com.example.pizzamarket.domain.LoginUserEmail
 import com.example.pizzamarket.ui.registration.Registration
+import org.koin.android.ext.android.inject
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,9 +29,9 @@ class MainActivity : AppCompatActivity() {
     //
     private var saveLogin: Boolean = false
 
-    private val userRepository by lazy { UserRepositoryImpl(userStorage = SharedPrefUserStorage(context = applicationContext))}
-    private val getEmail by lazy { GetEmail(userRepository = userRepository)}
-    private val saveEmail by lazy { SaveEmail(userRepository = userRepository) }
+    //private val userRepository:UserRepositoryImpl by inject() //lazy { UserRepositoryImpl(userStorage = SharedPrefUserStorage(context = applicationContext))}
+    private val getEmail:GetEmail by inject()//lazy { GetEmail(userRepository = userRepository)}
+    private val saveEmail:SaveEmail by inject() //lazy { SaveEmail(userRepository = userRepository) }
 
 
     lateinit var emailEditText: EditText
@@ -83,7 +85,7 @@ class MainActivity : AppCompatActivity() {
                 loginPrefsEditor.commit()
             } else {
                 loginPrefsEditor.putBoolean("saveLogin", false)
-                val params = SaveUserEmailParam(email = "", password = "")
+                val params = SaveUserEmailParam(email = userEmail, password = userPassword)
                 saveEmail.execute(param = params)
                 loginPrefsEditor.clear()
                 loginPrefsEditor.commit()
