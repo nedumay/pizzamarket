@@ -48,21 +48,28 @@
     <string name="pizza_assorted">Пицца Ассорти"</string>
 
     <!-- Меню добавки -->
-    <string name="no">Нет</string>
-    <string name="cheese">Сыр</string>
-    <string name="sauce">Соус</string>
+    <string-array name="addit_menu">
+        <item>Нет</item>
+        <item>Сыр</item>
+        <item>Соус</item>
+    </string-array>
     <!-- Меню доставка-->
-    <string name="courier">Курьер</string>
-    <string name="pickup">Самовывоз</string>
+    <string-array name="menu_deliver">
+        <item>Курьер</item>
+        <item>Самовывоз</item>
+    </string-array>
+    <!-- Меню размер-->
+    <string-array name="menu_size">
+        <item>32</item>
+        <item>48</item>
+        <item>55</item>
+    </string-array>
 
     <string name="size_pizza">Диаметр пиццы</string>
     <string name="dditives">Добавка</string>
     <string name="delivery_method">Способ достаки</string>
     <string name="price">Цена</string>
     <string name="information">Информация</string>
-    <string name="size_32">32</string>
-    <string name="size_48">48</string>
-    <string name="size_55">55</string>
-
     <string name="add_to_basket">Добавить в корзину</string>
+    <string name="selected">Выбран</string>
 </resources>

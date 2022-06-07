@@ -47,23 +47,28 @@
     <string name="pizza_assorted">Pizza Assorted"</string>
 
     <!-- Menu additive-->
-    <string name="no">No</string>
-    <string name="cheese">Сheese</string>
-    <string name="sauce">sauce</string>
+    <string-array name="addit_menu">
+        <item>No</item>
+        <item>Cheese</item>
+        <item>Sauce</item>
+    </string-array>
 
-    <!-- Menu delivery-->
-    <string name="courier">Courier</string>
-    <string name="pickup">Pickup</string>
+    <string-array name="menu_deliver">
+        <item>Courier</item>
+        <item>Pickup</item>
+    </string-array>
+    <!-- Меню размер-->
+    <string-array name="menu_size">
+        <item>32</item>
+        <item>48</item>
+        <item>55</item>
+    </string-array>
 
     <string name="size_pizza">Diameter pizza</string>
     <string name="dditives">Аdditives</string>
     <string name="delivery_method">Delivery method</string>
     <string name="price">Price</string>
-
     <string name="information">Information</string>
-
-    <string name="size_32">32</string>
-    <string name="size_48">48</string>
-    <string name="size_55">55</string>
     <string name="add_to_basket">Add to basket</string>
+    <string name="selected">Selected</string>
 </resources>
