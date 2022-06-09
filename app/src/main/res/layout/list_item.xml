@@ -29,8 +29,8 @@
                 android:id="@+id/card_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:strokeColor="@color/stroke_color"
-                tools:ignore="MissingConstraints">
+                app:strokeWidth="0dp"
+                app:cardElevation="0dp">
                 <ImageView
                     android:id="@+id/img_view"
                     android:layout_width="230dp"

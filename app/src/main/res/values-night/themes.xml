@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.PizzaMarket" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.PizzaMarket" parent="Theme.Material3.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/red</item>
         <item name="colorPrimaryVariant">@color/black</item>
@@ -50,7 +50,12 @@
 
     <style name="TextMenuPizza">
         <item name="android:textSize">20sp</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SpinnerMenuPizza">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="Theme.PizzaMarket.NoActionBar">

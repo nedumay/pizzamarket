@@ -32,7 +32,7 @@
         android:id="@+id/cardName"
         android:layout_width="235dp"
         android:layout_height="50dp"
-        android:background="@color/white"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/cardPhoto"
         app:layout_constraintEnd_toEndOf="@+id/cardPhoto"
@@ -55,7 +55,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_login"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/login"
@@ -75,7 +75,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_password"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/password"
@@ -95,7 +95,7 @@
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/login_btn"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -104,6 +104,7 @@
         android:backgroundTint="@color/red"
         android:text="@string/next"
         android:textColor="@color/white"
+        style="@style/Widget.Material3.Button.TonalButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -111,9 +112,9 @@
         app:layout_constraintTop_toBottomOf="@+id/linChek"
         app:layout_constraintVertical_bias="0.023" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/registr_btn"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="match_parent"
         android:layout_height="60sp"
         android:layout_marginStart="10dp"

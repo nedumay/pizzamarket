@@ -70,9 +70,9 @@
             android:layout_height="20dp"
             android:layout_margin="5dp"
             android:src="@drawable/ic_baseline_star"
-            app:layout_constraintBottom_toBottomOf="@+id/text_star_pizza"
+            app:layout_constraintBottom_toBottomOf="@+id/name_pizza"
             app:layout_constraintEnd_toStartOf="@+id/text_star_pizza"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/name_pizza" />
 
         <TextView
             android:id="@+id/text_star_pizza"
@@ -80,10 +80,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:layout_marginEnd="8dp"
             android:text="4/5"
-            app:layout_constraintBottom_toBottomOf="@+id/name_pizza"
+            app:layout_constraintBottom_toBottomOf="@+id/star"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/star" />
 
         <TextView
             android:id="@+id/size_pizza"
@@ -98,10 +99,9 @@
 
         <Spinner
             android:id="@+id/menu_size"
-            style="@style/TextMenuPizza"
+            style="@style/SpinnerMenuPizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
             app:layout_constraintBottom_toBottomOf="@+id/size_pizza"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/size_pizza" />
@@ -118,11 +118,11 @@
 
         <Spinner
             android:id="@+id/menu_additive"
-            style="@style/TextMenuPizza"
+            style="@style/SpinnerMenuPizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="@+id/additives_pizza"
-            app:layout_constraintEnd_toEndOf="@+id/menu_size"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/additives_pizza" />
 
         <TextView
@@ -137,11 +137,11 @@
 
         <Spinner
             android:id="@+id/menu_delivery"
-            style="@style/TextMenuPizza"
+            style="@style/SpinnerMenuPizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="@+id/delivery_pizza"
-            app:layout_constraintEnd_toEndOf="@+id/menu_additive"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/delivery_pizza" />
 
         <TextView
@@ -159,21 +159,22 @@
             style="@style/TextMenuPizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
             android:text="price"
             app:layout_constraintBottom_toBottomOf="@+id/price_pizza"
-            app:layout_constraintEnd_toEndOf="@+id/menu_delivery"
-            app:layout_constraintStart_toStartOf="@+id/menu_delivery"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/price_pizza" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/add_basket"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/red"
         android:text="@string/add_to_basket"
         android:textColor="@color/white"
+        style="@style/Widget.Material3.Button.TonalButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
         app:layout_constraintHorizontal_bias="0.0"
