@@ -5,14 +5,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
-import com.example.pizzamarket.ui.info.PizzaInfo
 import com.example.pizzamarket.R
 import com.example.pizzamarket.adapters.RecyclerAdapter
 import com.example.pizzamarket.adapters.onRecyclerClickListener
 import com.example.pizzamarket.data.DataInitItem
 import com.example.pizzamarket.data.DataItem
 import com.example.pizzamarket.databinding.FragmentMenuBinding
+import com.example.pizzamarket.ui.info.PizzaInfo
 
 
 class MenuFragment : Fragment() {

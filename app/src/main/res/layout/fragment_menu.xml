@@ -18,21 +18,29 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
-        <com.google.android.material.textfield.TextInputLayout
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/textField"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            app:strokeWidth="1dp"
+            app:cardElevation="1dp"
+            app:cardCornerRadius="10dp"
+            app:strokeColor="@color/red"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/search"
-            android:padding="10dp"
-            app:startIconDrawable="@drawable/ic_baseline_search">
+            android:layout_height="match_parent"
+            android:padding="10dp">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <androidx.appcompat.widget.SearchView
                 android:id="@+id/research"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent"
+                android:clickable="true"
+                app:iconifiedByDefault="false"
+                app:queryHint="@string/search"
+                />
 
-        </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.card.MaterialCardView>
 
         <TextView
             android:id="@+id/category"
