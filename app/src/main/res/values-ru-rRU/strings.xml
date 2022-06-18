@@ -75,4 +75,12 @@
     <string name="information">Информация</string>
     <string name="add_to_basket">Добавить в корзину</string>
     <string name="selected">Выбран</string>
+    
+    <string name="document">Документы</string>
+    <string name="application">Приложение</string>
+    <string name="users_agreement">Пользовательское соглашение</string>
+    <string name="license_agreement">Лицензионное соглашение</string>
+    <string name="promotion_terms">Условия акций</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="payment_rules">Правила оплаты</string>
 </resources>
