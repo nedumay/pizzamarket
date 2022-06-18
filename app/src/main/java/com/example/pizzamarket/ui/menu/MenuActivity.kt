@@ -41,7 +41,7 @@ class MenuActivity : AppCompatActivity() {
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_menu)
         appBarConfiguration = AppBarConfiguration(
-            setOf(R.id.nav_home_menu, R.id.nav_basket, R.id.nav_settings_account), drawerLayout
+            setOf(R.id.nav_home_menu, R.id.nav_basket, R.id.nav_profile, R.id.nav_about_Us, R.id.nav_about_app), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
@@ -53,7 +53,7 @@ class MenuActivity : AppCompatActivity() {
                     true
                 }
                 R.id.action_settings -> {
-                    Toast.makeText(applicationContext, R.id.action_settings, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(applicationContext, R.string.action_settings, Toast.LENGTH_SHORT).show()
                     true
                 }
                 R.id.log_out ->{

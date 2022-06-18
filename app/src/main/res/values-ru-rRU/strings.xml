@@ -34,6 +34,9 @@
     <string name="menu_home">Меню</string>
     <string name="menu_gallery">Корзина</string>
     <string name="menu_slideshow">Настройки аккаунта</string>
+    <string name="menu_profile">Профиль</string>
+    <string name="menu_about_us">О нас</string>
+    <string name="menu_about_app">О приложении</string>
 
     <string name="pizza_cesar">Пицца Цезарь"</string>
     <string name="pizza_cheese">Пицца Сырная"</string>

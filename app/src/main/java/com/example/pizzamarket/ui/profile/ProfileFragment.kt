@@ -1,21 +1,19 @@
-package com.example.pizzamarket.ui.settingsacc
+package com.example.pizzamarket.ui.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.example.pizzamarket.databinding.FragmentSettingsAccountBinding
+import com.example.pizzamarket.databinding.FragmentProfileBinding
 
-class SettingsAccountFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
-    private var _binding: FragmentSettingsAccountBinding? = null
+    private var _binding: FragmentProfileBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        _binding = FragmentSettingsAccountBinding.inflate(inflater, container, false)
+        _binding = FragmentProfileBinding.inflate(inflater, container, false)
         val root: View = binding.root
         
         return root
