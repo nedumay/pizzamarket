@@ -4,15 +4,12 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Filter
-import android.widget.Filterable
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pizzamarket.R
 import com.example.pizzamarket.data.DataItem
-import java.util.*
-import kotlin.collections.ArrayList
+
 
 class RecyclerAdapter  internal constructor(context: Context?, dataItem: List<DataItem>, private val onClickListener:onRecyclerClickListener):
     RecyclerView.Adapter<RecyclerAdapter.ViewHolder>(){
@@ -41,14 +38,14 @@ class RecyclerAdapter  internal constructor(context: Context?, dataItem: List<Da
         return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: RecyclerAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val person: DataItem = dataItem[position]
         holder.imgView.setImageResource(person.imgId)
         holder.titleView.setText(person.titleId)
         holder.starView.setText(person.star)
 
         holder.itemView.setOnClickListener {
-            onClickListener.onCLick(person,position)
+            onClickListener.onClick(person,position)
         }
     }
 

@@ -1,13 +1,12 @@
 package com.example.pizzamarket.data
 
 import com.example.pizzamarket.R
-import com.example.pizzamarket.data.dataaboutapp.DataItemAboutApp
 
 class DataInitItem {
 
     internal val dataItemPopPizza: ArrayList<DataItem> = ArrayList()
     internal val dataItemWeekPizza: ArrayList<DataItem> = ArrayList()
-    internal val dataItemDocument: ArrayList<DataItemAboutApp> = ArrayList()
+    internal val dataItemAboutApp: ArrayList<DataItemAboutApp> = ArrayList()
 
     fun setInitialSavedStatePopPizza(){
         dataItemPopPizza.add(DataItem(R.string.pizza_cesar,R.drawable.cesar,"4/5"))
@@ -31,12 +30,12 @@ class DataInitItem {
         dataItemWeekPizza.add(DataItem(R.string.pizza_assorted,R.drawable.season,"4.5/5"))
     }
 
-    fun setInitialAboutApp(){
-        dataItemDocument.add((DataItemAboutApp(R.string.users_agreement)))
-        dataItemDocument.add((DataItemAboutApp(R.string.license_agreement)))
-        dataItemDocument.add((DataItemAboutApp(R.string.promotion_terms)))
-        dataItemDocument.add((DataItemAboutApp(R.string.privacy_policy)))
-        dataItemDocument.add((DataItemAboutApp(R.string.payment_rules)))
+    fun setInitialSavedAboutApp(){
+        dataItemAboutApp.add(DataItemAboutApp(R.string.users_agreement))
+        dataItemAboutApp.add(DataItemAboutApp(R.string.license_agreement))
+        dataItemAboutApp.add(DataItemAboutApp(R.string.promotion_terms))
+        dataItemAboutApp.add(DataItemAboutApp(R.string.privacy_policy))
+        dataItemAboutApp.add(DataItemAboutApp(R.string.payment_rules))
     }
 
 }

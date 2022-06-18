@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import com.example.pizzamarket.R
 import com.example.pizzamarket.adapters.RecyclerAdapter
@@ -33,7 +32,7 @@ class MenuFragment : Fragment() {
         val root: View = binding.root
 
         val recClickListenerPop = object: onRecyclerClickListener {
-            override fun onCLick(dataItem: DataItem, position: Int) {
+            override fun onClick(dataItem: DataItem, position: Int) {
                 when(position){
                     0 -> {
                         val cesarIntent = Intent(context, PizzaInfo::class.java)
@@ -130,7 +129,7 @@ class MenuFragment : Fragment() {
         binding.recyclerView.adapter = adapterPop
 
         val recClickListenerWeek = object: onRecyclerClickListener {
-            override fun onCLick(dataItem: DataItem, position: Int) {
+            override fun onClick(dataItem: DataItem, position: Int) {
                 when(position){
                     0->{
                         val neoplIntent = Intent(context, PizzaInfo::class.java)
