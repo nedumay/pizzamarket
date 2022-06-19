@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:text="Name pizza"
-            app:layout_constraintEnd_toStartOf="@+id/star"
+            app:layout_constraintEnd_toEndOf="@+id/size_pizza"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -71,7 +71,7 @@
             android:layout_margin="5dp"
             android:src="@drawable/ic_baseline_star"
             app:layout_constraintBottom_toBottomOf="@+id/name_pizza"
-            app:layout_constraintEnd_toStartOf="@+id/text_star_pizza"
+            app:layout_constraintStart_toStartOf="@+id/menu_size"
             app:layout_constraintTop_toTopOf="@+id/name_pizza" />
 
         <TextView
@@ -84,6 +84,7 @@
             android:text="4/5"
             app:layout_constraintBottom_toBottomOf="@+id/star"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/star"
             app:layout_constraintTop_toTopOf="@+id/star" />
 
         <TextView
@@ -159,10 +160,9 @@
             style="@style/TextMenuPizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
             android:text="price"
             app:layout_constraintBottom_toBottomOf="@+id/price_pizza"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/text_star_pizza"
             app:layout_constraintTop_toTopOf="@+id/price_pizza" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

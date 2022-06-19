@@ -31,7 +31,7 @@ class PizzaInfo : AppCompatActivity() {
             size.onItemSelectedListener = object :
             AdapterView.OnItemSelectedListener{
                 override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, p3: Long) {
-                    Toast.makeText(this@PizzaInfo, getString(R.string.size_pizza ) + " " + size_menu[position], Toast.LENGTH_LONG).show()
+                    //Toast.makeText(this@PizzaInfo, getString(R.string.size_pizza ) + " " + size_menu[position], Toast.LENGTH_LONG).show()
                 }
 
                 override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -46,7 +46,7 @@ class PizzaInfo : AppCompatActivity() {
             addit.onItemSelectedListener = object :
             AdapterView.OnItemSelectedListener{
                 override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, p3: Long) {
-                    Toast.makeText(this@PizzaInfo, getString(R.string.dditives) + " " + addit_menu[position], Toast.LENGTH_LONG).show()
+                    //Toast.makeText(this@PizzaInfo, getString(R.string.dditives) + " " + addit_menu[position], Toast.LENGTH_LONG).show()
                 }
 
                 override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -61,7 +61,7 @@ class PizzaInfo : AppCompatActivity() {
             deliv.onItemSelectedListener = object :
             AdapterView.OnItemSelectedListener{
                 override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, p3: Long) {
-                    Toast.makeText(this@PizzaInfo, getString(R.string.delivery_method) + " " + deliver_menu[position], Toast.LENGTH_LONG).show()
+                    //Toast.makeText(this@PizzaInfo, getString(R.string.delivery_method) + " " + deliver_menu[position], Toast.LENGTH_LONG).show()
                 }
 
                 override fun onNothingSelected(parent: AdapterView<*>?) {
